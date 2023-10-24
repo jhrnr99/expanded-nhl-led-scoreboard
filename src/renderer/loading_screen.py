@@ -1,7 +1,7 @@
 from PIL import Image
 from images.image_helper import ImageHelper
 from utils import get_file
-from time import sleep
+import time
 
 PATH = "assets/loading/loading.gif"
 
