@@ -6,6 +6,7 @@ PATH = "assets/loading/loading.gif"
 class Loading:
     def __init__(self, matrix):
         self.matrix = matrix
+        
 
     def play_gif(self, file):
         im = Image.open(PATH)
@@ -29,7 +30,6 @@ class Loading:
                 im.seek(frame_nub)
 
             self.matrix.draw_image(("50%", 0), im, "center")
-            self.matrix.render()
 
             frame_nub += 1
             self.sleepEvent.wait(0.1)
