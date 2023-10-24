@@ -8,7 +8,6 @@ class Loading:
         self.matrix = matrix
         
     def render(self):
-        debug.info('Rendering...')
         self.play_gif(PATH)
 
     def play_gif(self, file):
