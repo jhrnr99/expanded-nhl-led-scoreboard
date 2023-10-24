@@ -7,9 +7,12 @@ class Loading:
     def __init__(self, matrix):
         self.matrix = matrix
         
+    def render(self):
+        debug.info('Rendering...')
+        self.play_gif(PATH)
 
     def play_gif(self, file):
-        im = Image.open(PATH)
+        im = Image.open(get_file(file))
 
         # Set the frame index to 0
         frame_nub = 0
@@ -30,6 +33,7 @@ class Loading:
                 im.seek(frame_nub)
 
             self.matrix.draw_image(("50%", 0), im, "center")
+            self.matrix.render()
 
             frame_nub += 1
             self.sleepEvent.wait(0.1)
