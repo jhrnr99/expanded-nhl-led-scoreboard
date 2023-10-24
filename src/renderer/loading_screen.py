@@ -17,7 +17,7 @@ class Loading:
         # Set the frame index to 0
         frame_nub = 0
         # Set number of loop to 1 (if you want to play you animation more then once, change this variable)
-        numloop = 500
+        numloop = 20
         self.matrix.clear()
 
         # Go through the frames
