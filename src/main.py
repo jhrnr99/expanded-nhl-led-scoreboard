@@ -53,7 +53,8 @@ def run():
 
      #Riff to add loading screen here
     loading = Loading(matrix)
-    loading.render()
+    loadingThread = threading.Thread(loading.render())
+    loadingThread.start()
 
     # Read scoreboard options from config.json if it exists
     config = ScoreboardConfig("config", commandArgs, (matrix.width, matrix.height))

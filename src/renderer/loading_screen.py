@@ -1,6 +1,7 @@
 from PIL import Image
 from images.image_helper import ImageHelper
 from utils import get_file
+from time import sleep
 
 PATH = "assets/loading/loading.gif"
 
@@ -36,3 +37,4 @@ class Loading:
             self.matrix.render()
 
             frame_nub += 1
+            time.sleep(1)
