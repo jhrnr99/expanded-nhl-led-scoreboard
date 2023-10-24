@@ -36,4 +36,3 @@ class Loading:
             self.matrix.render()
 
             frame_nub += 1
-            self.sleepEvent.wait(0.1)
