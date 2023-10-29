@@ -3,7 +3,8 @@ import time
 from datetime import datetime, timedelta
 from data.scoreboard_config import ScoreboardConfig
 from renderer.main import MainRenderer
-from rgbmatrix import RGBMatrix, RGBMatrixOptions
+#from rgbmatrix import RGBMatrix, RGBMatrixOptions
+from RGBMatrixEmulator import RGBMatrix, RGBMatrixOptions
 from utils import args, led_matrix_options, stop_splash_service
 from data.data import Data
 import threading
