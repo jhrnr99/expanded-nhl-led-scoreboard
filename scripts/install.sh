@@ -21,8 +21,8 @@ echo "$(tput setaf 4)Running rgbmatrix installation...$(tput setaf 9)"
 
 cd submodules/matrix/bindings/python/rgbmatrix/ || exit
 
-python3 -m pip install --no-cache-dir cython
-python3 -m cython -2 --cplus *.pyx
+#python3 -m pip install --no-cache-dir cython
+#python3 -m cython -2 --cplus *.pyx
 
 cd ../../../ || exit
 
